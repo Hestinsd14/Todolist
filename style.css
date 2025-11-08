@@ -1,0 +1,180 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 30px;
+  margin: 0;
+}
+
+.container {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 1000px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.input-area {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.input-area input, .input-area button {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.input-area button {
+  background: #2980b9;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.input-area button:hover {
+  background: #1f6693;
+}
+
+.task-sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.task-group {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.task-group h2 {
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+li {
+  list-style: none;
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 5px solid #3498db;
+}
+
+.task-info span.task-date {
+  font-size: 0.8em;
+  color: gray;
+}
+
+.buttons button {
+  background: #2980b9;
+  border: none;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.8em;
+}
+
+.buttons .edit { background: #f39c12; }
+.buttons .delete { background: #e74c3c; }
+.buttons .move { background: #27ae60; }
+
+.calendar-section {
+  margin-top: 25px;
+  background: #f4f9ff;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.calendar-day {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85em;
+}
+
+.calendar-day.today {
+  background: #d1f7d6;
+  border-color: #27ae60;
+}
+
+.calendar-day.has-task {
+  background: #fceabb;
+  border-color: #f1c40f;
+}
+
+.notes-section {
+  margin-top: 25px;
+  background: #fafafa;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.note-input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.note-input input, .note-input textarea {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+#addNote {
+  background: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+}
+#addNote:hover { background: #1e8f50; }
+
+.note-item {
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+.note-actions button {
+  border: none;
+  border-radius: 5px;
+  padding: 4px 8px;
+  font-size: 0.8em;
+  cursor: pointer;
+  color: white;
+}
+
+.note-actions .edit { background: #f39c12; }
+.note-actions .delete { background: #e74c3c; }

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplikasi To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🗓️ Aplikasi To-Do List</h1>
+
+    <!-- Input Tambah Tugas -->
+    <div class="input-area">
+      <input type="text" id="taskInput" placeholder="Tambahkan tugas...">
+      <input type="date" id="taskDate">
+      <button id="addBtn" type="button">Tambah</button>
+    </div>
+
+    <!-- Daftar Tugas -->
+    <div class="task-sections">
+      <div class="task-group">
+        <h2>🆕 Baru</h2>
+        <ul id="newTasks"></ul>
+      </div>
+
+      <div class="task-group">
+        <h2>🔄 Sedang Dikerjakan</h2>
+        <ul id="inProgressTasks"></ul>
+      </div>
+
+      <div class="task-group">
+        <h2>✅ Selesai</h2>
+        <ul id="completedTasks"></ul>
+      </div>
+    </div>
+
+    <!-- Kalender -->
+    <div class="calendar-section">
+      <h2>📅 Kalender Agenda</h2>
+      <div id="calendar"></div>
+    </div>
+
+    <!-- Catatan -->
+    <div class="notes-section">
+      <h2>🗒️ Catatan</h2>
+      <div class="note-input">
+        <input type="text" id="noteTitle" placeholder="Judul catatan...">
+        <textarea id="noteContent" placeholder="Isi catatan..."></textarea>
+        <button id="addNote" type="button">Tambah Catatan</button>
+      </div>
+      <ul id="notesList"></ul>
+    </div>
+  </div>
+
+  <!-- Hubungkan Script -->
+  <script src="script.js"></script>
+</body>
+</html>
